@@ -1,0 +1,42 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+button img {
+  width: 250px;
+  height: 250px;
+}
