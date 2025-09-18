@@ -1,24 +1,6 @@
 import { useState } from 'react';
-import './Board.css'
-
-function CustomLetter(props) {
-  // You can style or use SVGs for custom letters here
-  if (props.value === 'X') {
-    return <img src='/assets/letters/X.png' alt={props.value} />;
-  }
-  if (props.value === 'O') {
-    return <img src='assets/letters/O.png' alt={props.value} />;
-  }
-  return null;
-}
-
-function Square({ value, onClick }) {
-  return (
-    <button className="square" onClick={onClick}>
-      <CustomLetter value={value} />
-    </button>
-  );
-}
+import Square from "./Square"
+import './Components.css'
 
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
