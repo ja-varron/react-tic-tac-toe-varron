@@ -1,9 +1,12 @@
-import  CustomLetters from "./Letters"
-import "./Components.css"
+import CustomLetters from "./Letters";
+import "./Components.css";
 
-export default function Square({ value, onClick }) {
+export default function Square({ value, onClick, winner }) {
   return (
-    <button className="square" onClick={onClick}>
+    <button
+      className={`square ${winner ? "winner-square" : ""}`}
+      onClick={onClick}
+    >
       <CustomLetters value={value} />
     </button>
   );
